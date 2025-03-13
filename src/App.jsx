@@ -1,8 +1,11 @@
 import './App.css'
+import Sidebar from './sidebar'
 
 function App() {
   return (
-    <div className='bg-red-700'><p>FUNCIONOU</p></div>
+    <div className='bg-gray-300 w-screen h-screen'>
+      <Sidebar/>
+    </div>
   )
 }
 
