@@ -20,6 +20,14 @@ function getChanceDeChuva(){
     return '50%';
 }
 
+function getBackgroundImage(){
+    return {backgroundImage: "url('src/assets/teste.jpg')"};
+}
+
+function getCidadePais(){
+    return 'Natal, Brasil'
+}
+
 function Sidebar(){
     return (
         <div className="bg-white h-screen w-[25%] flex flex-col items-center">
@@ -51,6 +59,11 @@ function Sidebar(){
             <div className="w-[75%] flex flex-row gap-2">
                 <CloudRainIcon color="blue" size={32}/>
                 <span className="font-bold text-2xl">{getChanceDeChuva()}</span>
+            </div>
+
+            <div style={getBackgroundImage()} 
+            className="w-[75%] h-[15%] mt-10 flex justify-center items-center rounded-xl">
+                <span className="text-white font-bold">{getCidadePais()}</span>
             </div>
         </div>
     );
