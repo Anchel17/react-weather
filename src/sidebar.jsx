@@ -1,5 +1,13 @@
 import { CircleXIcon, CloudRainIcon, CloudyIcon, SearchIcon } from "lucide-react";
 
+/**
+ * CHAMADA DE EXPEMPLO PARA A API
+ * https://api.open-meteo.com/v1/forecast?latitude=-5.79448&longitude=-35.211&daily=uv_index_max&current=wind_speed_10m,temperature_2m,relative_humidity_2m,is_day&timezone=auto
+ * 
+ * VARIÁVEIS: is_day, wind_speed_10m, temperature_2m, relative_humidity_2m, "uv_index_max"
+ * 
+ */
+
 function getTemperatura(){
     return '15°c';
 }
