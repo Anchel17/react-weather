@@ -1,4 +1,5 @@
 import { CloudSunIcon } from "lucide-react";
+import WeekForecast from "./weekForecast";
 
 function WeatherInfos(){
     return (
@@ -13,6 +14,10 @@ function WeatherInfos(){
                     <button className="font-semibold text-xl text-white bg-black rounded-full py-2 px-3">C°</button>
                     <button className="font-semibold text-xl bg-white rounded-full py-2 px-3">F°</button>
                 </div>
+            </div>
+
+            <div className="py-20">
+                <WeekForecast/>
             </div>
         </div>
     )
