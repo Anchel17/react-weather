@@ -1,5 +1,7 @@
 import { CloudSunIcon } from "lucide-react";
 import WeekForecast from "./weekForecast";
+import TodayCard from "./components/todayCard";
+import TodayWeatherInfos from "./todayWeatherInfox";
 
 function WeatherInfos(){
     return (
@@ -16,8 +18,16 @@ function WeatherInfos(){
                 </div>
             </div>
 
-            <div className="py-20">
+            <div className="flex flex-col flex-wrap py-12 items-center">
                 <WeekForecast/>
+            </div>
+
+            <div className="flex flex-col gap-6 flex-wrap">
+                {/* wind_speed_10m,  temperature_2m, temperature_2m_min, temperature_2m_max, relative_humidity_2m, 
+                 uv_index_max, daylight_duration, apparent_temperature, weather_code (wmo code), sunshine_duration
+                */}
+                <h2 className="font-bold text-2xl">Tempo Hoje</h2>
+                <TodayWeatherInfos/>
             </div>
         </div>
     )

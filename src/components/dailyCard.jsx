@@ -2,7 +2,7 @@ import { SunIcon } from "lucide-react";
 
 function DailyCard(){
     return (
-        <div className="bg-white w-[12%] flex flex-col items-center py-4 gap-5 rounded-xl">
+        <div className="bg-white w-[170px] flex flex-col items-center py-4 px-4 gap-4 rounded-xl shadow-md">
             <h2 className="font-semibold text-xl">Dom</h2>
             <SunIcon size={50} color="#FFDF4A"/>
             <div className="flex gap-1">
